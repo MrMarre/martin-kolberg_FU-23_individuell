@@ -1,0 +1,29 @@
+@use "../../sass/" as *;
+
+.landing {
+  @include basePageSize();
+  background-color: #38846d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/images/landing.png");
+}
+.logo {
+  margin-top: 7px;
+  height: 149px;
+  width: 257px;
+  cursor: pointer;
+}
+
+/* h1 {
+  font-family: $headerFont;
+  color: #ffffff;
+}
+p {
+  font-family: $paragraphFont;
+  color: #ffffff;
+  size: 9px;
+} */
+
+/* /landing */

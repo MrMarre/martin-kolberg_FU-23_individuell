@@ -1,0 +1,123 @@
+@use "../../sass" as *;
+
+/* VISIBILITY HIDDEN PÅ OVERLAY I SCSS STYR VAD DU SER I NULÄGET */
+
+.profile {
+  @include basePageSize();
+  background-color: $brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .avatar__container {
+    margin-top: 1rem;
+
+    .user__name {
+      font-family: $headerFont;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 1rem;
+      font-size: 24px;
+    }
+    .user__email {
+      margin-top: 0.4rem;
+      font-family: $paragraphFont;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+    }
+  }
+}
+
+.profile__overlay {
+  /* visibility: hidden; */
+  background-color: $pink;
+  width: 341px;
+  height: 565.77px;
+  border-radius: 3px;
+  position: absolute;
+  top: 5.5rem;
+  display: flex;
+  justify-content: center;
+
+  .overlay__content-center {
+    width: 320px;
+  }
+
+  .overlay__logo {
+    margin-top: 1.5rem;
+  }
+  .overlay__title {
+    font-family: $headerFont;
+    font-size: 32px;
+  }
+
+  .overlay__text {
+    font-family: $paragraphFont;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  .overlay__login-form {
+    margin-top: 2rem;
+
+    .label {
+      font-family: $paragraphFont;
+      font-size: $paragraphFontSize;
+      margin-right: 17rem;
+    }
+    #name,
+    #email {
+      font-family: $paragraphFont;
+      font-size: 16px;
+      width: 310px;
+      height: 48px;
+      background-color: $pink;
+      border-radius: 6px;
+      border: 1px solid $brown;
+      padding-left: 0.75rem;
+    }
+  }
+
+  .btn-signup {
+    width: 248px;
+    height: 55px;
+    border-radius: 50px;
+    font-family: $headerFont;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
+    background-color: $brown;
+    color: white;
+
+    position: absolute;
+    bottom: 2.5rem;
+    left: 3rem;
+  }
+}
+
+.checkbox__container {
+  display: flex;
+  margin-left: 1rem;
+  padding-top: 1.5rem;
+  position: relative;
+  align-items: center;
+
+  .checkbox {
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 1px $pink, 0 0 0 2px $brown;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .checkbox-native {
+    visibility: hidden;
+    position: absolute;
+  }
+  .checkbox-native:checked + .checkbox {
+    background-color: green;
+  }
+  .checkbox__text {
+    position: absolute;
+    left: 1.5rem;
+    font-family: $paragraphFont;
+  }
+}

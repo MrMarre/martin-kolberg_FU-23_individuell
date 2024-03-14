@@ -1,0 +1,48 @@
+@use "../../sass" as *;
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 311px;
+  margin: 0.5rem 0 0 0.5rem;
+
+  .button__add {
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+  }
+  .item__title-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .item__title {
+    font-family: $headerFont;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+
+    .dots {
+      text-wrap: nowrap;
+      font-size: 6px;
+      display: inline-block;
+      overflow: hidden;
+    }
+  }
+
+  .item__text-container {
+    overflow: hidden;
+  }
+  .item__price {
+    text-wrap: nowrap;
+    bottom: 0.9rem;
+    font-family: $headerFont;
+    margin: -1rem 0 0 0.5rem;
+    margin-top: -1rem;
+  }
+  .desc {
+    font-family: $paragraphFont;
+    font-size: $paragraphFontSize;
+  }
+}

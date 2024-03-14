@@ -1,0 +1,37 @@
+@use "../../sass" as *;
+
+.cart__btn-container {
+  width: 60px;
+  height: 60px;
+  background-color: $brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+
+  .cart__btn {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+  }
+  .btn--red-circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $red;
+    top: -0.25rem;
+    right: -0.25rem;
+    font-family: $headerFont;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

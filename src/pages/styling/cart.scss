@@ -1,0 +1,84 @@
+@use "../../sass" as *;
+
+.cart-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  &.true {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.cart__container {
+  background-color: #ffffff;
+  height: 42rem;
+  width: 22rem;
+  position: absolute;
+  top: 5.5rem;
+  left: 0.75rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .cart__title {
+    color: $brown;
+    font-family: $headerFont;
+    font-size: 32px;
+    margin-top: 2rem;
+  }
+  .cart__total {
+    width: 311px;
+  }
+  .cart__total-container {
+    display: flex;
+    font-family: $headerFont;
+    font-size: 23px;
+    color: $brown;
+    margin-top: 2rem;
+
+    .dots2 {
+      overflow: hidden;
+      margin-left: 0.75rem;
+      font-size: 8px;
+      letter-spacing: 1px;
+
+      color: rgba(0, 0, 0, 0.4);
+    }
+    .cart__total--price {
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+  }
+  .cart__VAT-info {
+    font-family: $paragraphFont;
+    text-align: left;
+    font-size: 12px;
+    color: $brown;
+    margin-bottom: 1rem;
+  }
+}
+.square {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 1.15rem;
+  top: -0.1rem;
+}
+
+.cart__order--btn {
+  width: 248px;
+  height: 55px;
+  background-color: $brown;
+  border-radius: 3.125rem;
+  margin-bottom: 2.563rem;
+  @include stylingHeaderFont(
+    $size: 24px,
+    $color: white,
+    $font-family: $headerFont
+  );
+}

@@ -1,0 +1,20 @@
+@use "../../sass" as *;
+
+.menu {
+  @include basePageSize();
+  background-color: $pink;
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 5rem 0 0rem 0;
+    font-family: $headerFont;
+    font-size: $headerBaseSize;
+    font-weight: 700;
+    font-style: normal;
+    color: $brown;
+  }
+}

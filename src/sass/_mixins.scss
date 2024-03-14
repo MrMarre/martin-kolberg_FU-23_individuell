@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+/* Exempel
+
+@mixin flex($direction: row, $justify: flex-start, $align: normal) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+*/
+@mixin stylingHeaderFont(
+  $size: $headerBaseSize,
+  $color: $headerBaseColor,
+  $font-family: $headerFont
+) {
+  color: $color;
+  font-size: $size;
+  font-family: $headerFont;
+}
+@mixin basePageSize() {
+  height: 667px;
+  width: 375px;
+  margin-top: 2rem;
+}
+@mixin commonFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

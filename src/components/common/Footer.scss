@@ -1,0 +1,10 @@
+@use "../../sass" as *;
+
+.footer {
+  background-image: url("../../assets/images/footer-image.png");
+  background-color: $pink;
+  width: 375px;
+  height: 73px;
+  background-size: cover;
+  /* margin: 0 auto; */
+}

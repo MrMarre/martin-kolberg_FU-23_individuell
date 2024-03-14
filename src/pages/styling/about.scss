@@ -1,0 +1,20 @@
+@use "../../sass" as *;
+
+.about__page {
+  @include basePageSize();
+  background-color: $pink;
+  height: auto;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .founder-image {
+    width: 311px;
+    height: 126px;
+    margin-top: 2rem;
+    background-color: $pink;
+    margin-bottom: 2.5rem;
+  }
+}

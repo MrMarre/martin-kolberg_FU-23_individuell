@@ -1,0 +1,73 @@
+@use "../../sass" as *;
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 311px;
+
+  &-name {
+    font-family: $headerFont;
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 0.5rem;
+  }
+
+  .left-container {
+    position: relative;
+    text-wrap: nowrap;
+    display: flex;
+
+    overflow: hidden;
+
+    .item__total {
+      font-family: $paragraphFont;
+      font-size: $paragraphFontSize;
+      text-align: start;
+    }
+  }
+
+  .dots2 {
+    overflow: hidden;
+    margin-left: 0.75rem;
+    font-size: 8px;
+    letter-spacing: 1px;
+
+    color: rgba(0, 0, 0, 0.4);
+  }
+  /* 
+  .dots {
+    position: absolute;
+
+     top: 50%;
+    left: 100%;
+
+    transform: translateY(-50%);
+ 
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 10px;
+    color: black;
+    overflow: hidden;
+  } */
+  .right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+.item__number {
+  font-family: $paragraphFont;
+  font-size: 14px;
+  font-weight: 600;
+}
+.item__decrement,
+.item__increment {
+  width: 12px;
+  height: 6px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}

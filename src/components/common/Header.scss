@@ -1,0 +1,22 @@
+@use "../../sass" as *;
+
+.header {
+  background-image: url("../../assets/images/header-image.png");
+  width: 375px;
+  height: 113px;
+  background-size: cover;
+  /* background-color: $pink; */
+  position: relative;
+  top: 0;
+
+  .hamburger {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+  .cart__btn-container {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}

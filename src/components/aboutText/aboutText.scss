@@ -1,0 +1,25 @@
+@use "../../sass" as *;
+
+.about__text-container {
+  width: 311px;
+  text-align: start;
+  color: $brown;
+}
+.title {
+  @include stylingHeaderFont();
+  line-height: 3.15rem;
+  margin-top: 1rem;
+}
+.paragraph__bold {
+  margin-top: 1.063rem;
+  font-family: $paragraphFont;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+}
+.paragraph__thin {
+  font-family: $paragraphFont;
+  font-size: $paragraphFontSize;
+  line-height: 1.2rem;
+  margin-top: 1rem;
+}

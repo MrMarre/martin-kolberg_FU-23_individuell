@@ -1,0 +1,46 @@
+@use "../../sass" as *;
+
+.status__container {
+  @include basePageSize();
+  background-color: #e5674e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .status__orderNr {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: $paragraphFont;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 3.875rem;
+  }
+  .drone {
+    margin-top: 2.5rem;
+  }
+  .status__message {
+    width: 279px;
+    font-family: $headerFont;
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+    line-height: 43.2px;
+  }
+  .message__eta {
+    font-family: $paragraphFont;
+    font-weight: 400;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 3rem;
+  }
+  .button__eta {
+    width: 184px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-family: $headerFont;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+  }
+}

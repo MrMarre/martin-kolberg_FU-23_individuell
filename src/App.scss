@@ -1,0 +1,15 @@
+@use "./sass/" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: $pink; */
+}
+
+#root {
+  margin: 0 auto;
+  width: 375px;
+  text-align: center;
+  position: relative;
+}
