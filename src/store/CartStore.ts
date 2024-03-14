@@ -12,6 +12,7 @@ interface CartStore {
   itemsTotal: number;
   priceTotal: number;
   orderNumber: string;
+  resetLatestCart: () => void;
   setOrderNumber: (orderNumber: string) => void;
   addToCartStore: (name: string, price: number) => void;
   deleteFromCartStore: (name: string, price: number) => void;
@@ -24,6 +25,9 @@ export const useCartStore = create<CartStore>()(
       itemsTotal: 0,
       priceTotal: 0,
       orderNumber: "",
+
+      resetLatestCart: () => set({ order: [], itemsTotal: 0, priceTotal: 0 }),
+
       setOrderNumber: (orderNumber) => set({ orderNumber }),
       addToCartStore: (name, price) =>
         set((state) => {

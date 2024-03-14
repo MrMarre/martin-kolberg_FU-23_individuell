@@ -13,7 +13,7 @@ const Cart = () => {
     setShowCart(!showCart);
   };
 
-  const { order, priceTotal, setOrderNumber } = useCartStore();
+  const { order, priceTotal, setOrderNumber, resetLatestCart } = useCartStore();
 
   const navigate = useNavigate();
   const navigateToStatus = async () => {

@@ -8,11 +8,18 @@ import { useNavigate } from "react-router-dom";
 const Status: React.FC = () => {
   const [eta, setEta] = useState<number>(0);
   const navigate = useNavigate();
+  const { orderNumber, priceTotal } = useCartStore();
+
   const handleNavigateToProfile = () => {
     navigate("/profile");
   };
 
-  const { orderNumber } = useCartStore();
+  useEffect(() => {
+    sessionStorage.setItem(
+      "savedOrder",
+      JSON.stringify({ orderNumber, priceTotal })
+    );
+  }, [orderNumber]);
 
   useEffect(() => {
     const getEta = async () => {
@@ -22,7 +29,7 @@ const Status: React.FC = () => {
       }
     };
     getEta();
-  }, []);
+  }, [orderNumber]);
 
   return (
     <>
